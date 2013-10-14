@@ -9,7 +9,7 @@ Exercice 1 - Fonction variadique (4pt)
 function adder(l, r){
 	return function(v){
 		return l(v) + r(v);
-	}
+	};
 }
 
 //We would like to add too many arguments
@@ -21,23 +21,23 @@ function adder(/* args */){
 	return function(e){
 		//Function are realised immediately in the forEach and there out is added to value
         args.forEach(function(val){
-            value += val(e);		  
-	   });
-	   return value;
-	}	
+              value += val(e);
+       });
+       return value;
+	};
 }
 
 function mult(v){
 	return function(e){
 		return v*e;
-	}
+	};
 }
 
 //This function return a substract between two value
 function sub(val1){
 	return function(val2){
 		return val1 - val2;
-	}
+	};
 }
 //END_OF_FUNCTION***************************************************************
 
@@ -51,7 +51,6 @@ console.log(adder(mult(2))(1)); // 2
 console.log(adder(mult(2), mult(2))(1)); // 4
 console.log(adder(mult(2), mult(2), mult(2))(1)); // 6
 console.log(adder(mult(2), sub(2), mult(2))(1)); // 5
-
 
 
 
