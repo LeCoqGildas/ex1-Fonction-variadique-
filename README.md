@@ -1,3 +1,3 @@
 ex1-Fonction-variadique-
 ========================
-It is the first exercice javascript aboute closure
+It is a simple exercice javascript aboute closure
